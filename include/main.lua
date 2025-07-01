@@ -1,3 +1,10 @@
-function _update60()
+Objs = {}
 
+function _init()
+    add(Objs, Pointer:new())
+end
+
+function _update60()
+    cls(0)
+    iteratecollection(Objs)
 end
