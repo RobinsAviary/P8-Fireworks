@@ -3,8 +3,10 @@ version 42
 __lua__
 #include RP-Base/utility.lua
 #include RP-Base/input.lua
+#include RP-Base/Vec2.lua
+#include RP-Base/Sprite.lua
 #include RP-Base/Obj.lua
-#include include/objs/Pointer.lua
+#include include/Objs/Pointer.lua
 #include include/main.lua
 
 __gfx__
