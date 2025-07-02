@@ -1,1 +1,9 @@
-Pointer = ObjMake(0,0,SpriteMake(1,Vec2Make(2,2), Vec2Make(5,5)))
+function PointerStep(self)
+    self.p = Vec2Add(self.p, Vec2Make(Input.x, Input.y))
+end
+
+Pointer = ObjMake({
+    p = VecCenter,
+    s = SpriteMake(1, Vec2Make(2,2), Vec2Make(5,5)),
+    step = PointerStep,
+})
