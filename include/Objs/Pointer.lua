@@ -1,5 +1,9 @@
 function PointerStep(self)
     self.p = Vec2Add(self.p, Vec2Make(Input.x, Input.y))
+
+    if Input.zp then
+        sfx(0)
+    end
 end
 
 Pointer = ObjMake({
